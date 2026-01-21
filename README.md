@@ -29,7 +29,7 @@ code --install-extension MrDHat.glow-vscode
 
 ### From VSIX
 
-1. Download the `.vsix` file from [Releases](https://github.com/akshaykatyal/glow-vscode/releases)
+1. Download the `.vsix` file from [Releases](https://github.com/MrDHat/glow-vscode/releases)
 2. In VS Code, press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac)
 3. Type "Install from VSIX" and select the command
 4. Choose the downloaded `.vsix` file
