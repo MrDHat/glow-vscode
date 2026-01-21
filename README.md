@@ -1,5 +1,7 @@
 # Glow Markdown Preview
 
+[![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/MrDHat.glow-vscode?label=VS%20Code%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=MrDHat.glow-vscode)
+
 A VS Code extension that enhances the built-in markdown preview with Glow/Glamour-inspired terminal aesthetics.
 
 ## Features
