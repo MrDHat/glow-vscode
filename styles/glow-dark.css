@@ -1,0 +1,360 @@
+/*
+ * Glow Dark Theme for VS Code Markdown Preview
+ * Matches charmbracelet/glamour dark style exactly
+ */
+
+/* ===== Document Base ===== */
+body,
+.vscode-body,
+.vscode-dark {
+    background-color: #1a1a1a !important;
+    color: #d0d0d0 !important;
+    font-family: 'SF Mono', 'Fira Code', 'JetBrains Mono', Consolas, 'Liberation Mono', Menlo, monospace !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    padding: 16px 24px !important;
+    max-width: 80ch !important;
+    margin: 0 auto !important;
+}
+
+/* ===== Headings ===== */
+
+/* H1 - Yellow (#ffff87) on purple/blue (#5f5fff) background, inline, bold */
+h1,
+body h1,
+.vscode-body h1 {
+    color: #ffff87 !important;
+    background-color: #5f5fff !important;
+    display: inline-block !important;
+    font-weight: bold !important;
+    padding: 2px 12px !important;
+    margin: 16px 0 !important;
+    border-radius: 2px !important;
+    border-bottom: none !important;
+    font-size: 1em !important;
+}
+
+/* H2-H5 - Cyan/teal, show ## prefix, bold */
+h2, h3, h4, h5,
+body h2, body h3, body h4, body h5,
+.vscode-body h2, .vscode-body h3, .vscode-body h4, .vscode-body h5 {
+    color: #5fafff !important;
+    font-weight: bold !important;
+    margin: 16px 0 8px 0 !important;
+    border-bottom: none !important;
+    font-size: 1em !important;
+}
+
+h2::before { content: "## " !important; color: #5fafff !important; }
+h3::before { content: "### " !important; color: #5fafff !important; }
+h4::before { content: "#### " !important; color: #5fafff !important; }
+h5::before { content: "##### " !important; color: #5fafff !important; }
+
+/* H6 - Green (#00af5f), show ###### prefix */
+h6,
+body h6,
+.vscode-body h6 {
+    color: #00d787 !important;
+    font-weight: normal !important;
+    margin: 12px 0 8px 0 !important;
+    border-bottom: none !important;
+    font-size: 1em !important;
+}
+
+h6::before { content: "###### " !important; color: #00d787 !important; }
+
+/* ===== Code Blocks ===== */
+pre,
+body pre,
+.vscode-body pre {
+    background-color: #373737 !important;
+    border-radius: 0 !important;
+    padding: 12px 16px !important;
+    overflow-x: auto !important;
+    margin: 12px 0 !important;
+    border: none !important;
+}
+
+pre code,
+body pre code,
+.vscode-body pre code {
+    color: #d0d0d0 !important;
+    background-color: transparent !important;
+    padding: 0 !important;
+    font-family: 'SF Mono', 'Fira Code', 'JetBrains Mono', Consolas, monospace !important;
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+}
+
+/* Inline code - Pink (#ff5f5f) on dark gray (#303030) */
+code,
+body code,
+.vscode-body code {
+    color: #ff5f87 !important;
+    background-color: #303030 !important;
+    padding: 1px 6px !important;
+    border-radius: 2px !important;
+    font-family: 'SF Mono', 'Fira Code', 'JetBrains Mono', Consolas, monospace !important;
+    font-size: 0.9em !important;
+}
+
+/* ===== Syntax Highlighting (Glamour colors) ===== */
+/* Keywords - Cyan */
+.hljs-keyword, .hljs-selector-tag, .hljs-built_in, .hljs-name, .hljs-tag,
+.token.keyword, .token.builtin {
+    color: #00AAFF !important;
+}
+
+/* Functions - Green */
+.hljs-function, .hljs-title, .hljs-class .hljs-title,
+.token.function {
+    color: #00D787 !important;
+}
+
+/* Strings - Tan/Orange */
+.hljs-string, .hljs-attribute, .hljs-literal, .hljs-template-tag, .hljs-template-variable,
+.token.string {
+    color: #C69669 !important;
+}
+
+/* Numbers - Teal */
+.hljs-number, .hljs-symbol,
+.token.number {
+    color: #6EEFC0 !important;
+}
+
+/* Comments - Gray */
+.hljs-comment, .hljs-deletion, .hljs-meta,
+.token.comment {
+    color: #676767 !important;
+    font-style: italic !important;
+}
+
+/* Variables */
+.hljs-variable, .hljs-params,
+.token.variable {
+    color: #d0d0d0 !important;
+}
+
+/* ===== Links ===== */
+/* Link URL - Teal (#008787) underlined */
+a,
+body a,
+.vscode-body a {
+    color: #008787 !important;
+    text-decoration: underline !important;
+}
+
+a:hover {
+    color: #00afaf !important;
+}
+
+/* ===== Blockquotes - Use left border to simulate │ character ===== */
+blockquote,
+body blockquote,
+.vscode-body blockquote {
+    border-left: 2px solid #666 !important;
+    margin: 12px 0 !important;
+    padding: 0 0 0 16px !important;
+    background-color: transparent !important;
+    font-style: normal !important;
+    color: #a0a0a0 !important;
+}
+
+blockquote p {
+    margin: 4px 0 !important;
+}
+
+blockquote blockquote {
+    margin: 4px 0 4px 8px !important;
+}
+
+/* ===== Lists ===== */
+ul,
+body ul,
+.vscode-body ul {
+    list-style-type: none !important;
+    padding-left: 0 !important;
+    margin: 8px 0 !important;
+}
+
+ul li,
+body ul li,
+.vscode-body ul li {
+    margin: 4px 0 !important;
+    padding-left: 20px !important;
+    position: relative !important;
+}
+
+ul li::before {
+    content: "•" !important;
+    color: #d0d0d0 !important;
+    position: absolute !important;
+    left: 4px !important;
+}
+
+/* Nested lists */
+ul ul { margin-left: 16px !important; }
+ul ul ul { margin-left: 16px !important; }
+
+ol,
+body ol,
+.vscode-body ol {
+    padding-left: 24px !important;
+    margin: 8px 0 !important;
+}
+
+ol li {
+    margin: 4px 0 !important;
+}
+
+/* ===== Task Lists ===== */
+ul li:has(input[type="checkbox"]) {
+    list-style: none !important;
+}
+
+ul li:has(input[type="checkbox"])::before {
+    content: none !important;
+}
+
+input[type="checkbox"] {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    width: auto !important;
+    height: auto !important;
+    border: none !important;
+    background: none !important;
+    margin-right: 4px !important;
+    vertical-align: baseline !important;
+    position: relative !important;
+}
+
+input[type="checkbox"]::before {
+    content: "[ ]" !important;
+    font-family: 'SF Mono', monospace !important;
+    color: #d0d0d0 !important;
+}
+
+input[type="checkbox"]:checked::before {
+    content: "[✓]" !important;
+    color: #00af5f !important;
+}
+
+/* ===== Tables ===== */
+table,
+body table,
+.vscode-body table {
+    border-collapse: collapse !important;
+    width: auto !important;
+    margin: 12px 0 !important;
+    font-size: 14px !important;
+}
+
+thead,
+body thead,
+.vscode-body thead {
+    background-color: transparent !important;
+}
+
+th,
+body th,
+.vscode-body th {
+    padding: 4px 16px 4px 0 !important;
+    text-align: left !important;
+    font-weight: normal !important;
+    border: none !important;
+    border-bottom: 1px solid #444 !important;
+    background-color: transparent !important;
+    color: #d0d0d0 !important;
+}
+
+td,
+body td,
+.vscode-body td {
+    padding: 4px 16px 4px 0 !important;
+    border: none !important;
+    border-bottom: 1px solid #333 !important;
+}
+
+tbody tr { background-color: transparent !important; }
+tbody tr:hover { background-color: #252525 !important; }
+
+/* ===== Horizontal Rules ===== */
+hr,
+body hr,
+.vscode-body hr {
+    border: none !important;
+    height: 1px !important;
+    background-color: #444 !important;
+    margin: 16px 0 !important;
+}
+
+/* ===== Images ===== */
+img,
+body img,
+.vscode-body img {
+    max-width: 100% !important;
+    height: auto !important;
+    border-radius: 0 !important;
+    margin: 8px 0 !important;
+}
+
+/* ===== Paragraphs ===== */
+p,
+body p,
+.vscode-body p {
+    margin: 8px 0 !important;
+}
+
+/* ===== Strong and Emphasis ===== */
+strong,
+body strong,
+.vscode-body strong {
+    color: #ffffff !important;
+    font-weight: bold !important;
+}
+
+em,
+body em,
+.vscode-body em {
+    color: #d0d0d0 !important;
+    font-style: italic !important;
+}
+
+/* ===== Keyboard Keys ===== */
+kbd,
+body kbd,
+.vscode-body kbd {
+    background-color: #303030 !important;
+    border: 1px solid #444 !important;
+    border-radius: 3px !important;
+    color: #d0d0d0 !important;
+    font-family: 'SF Mono', Consolas, monospace !important;
+    font-size: 0.85em !important;
+    padding: 2px 5px !important;
+}
+
+/* ===== Selection ===== */
+::selection {
+    background-color: #5f5fff !important;
+    color: #ffff87 !important;
+}
+
+/* ===== Scrollbar ===== */
+::-webkit-scrollbar {
+    width: 8px !important;
+    height: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #1a1a1a !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #444 !important;
+    border-radius: 4px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555 !important;
+}
