@@ -15,9 +15,21 @@ A VS Code extension that enhances the built-in markdown preview with Glow/Glamou
 
 ## Installation
 
+### From VS Code Marketplace (Recommended)
+
+1. Open VS Code
+2. Press `Ctrl+Shift+X` (or `Cmd+Shift+X` on Mac) to open Extensions
+3. Search for "Glow Markdown Preview"
+4. Click Install
+
+Or install via command line:
+```bash
+code --install-extension MrDHat.glow-vscode
+```
+
 ### From VSIX
 
-1. Download the `.vsix` file
+1. Download the `.vsix` file from [Releases](https://github.com/akshaykatyal/glow-vscode/releases)
 2. In VS Code, press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac)
 3. Type "Install from VSIX" and select the command
 4. Choose the downloaded `.vsix` file
