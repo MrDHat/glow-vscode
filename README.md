@@ -6,7 +6,8 @@ A VS Code extension that enhances the built-in markdown preview with Glow/Glamou
 
 ## Features
 
-- **Dark theme styling** inspired by the [Glow](https://github.com/charmbracelet/glow) terminal markdown renderer
+- **Dark and light theme support** - automatically adapts to your VS Code theme
+- **Terminal aesthetics** inspired by the [Glow](https://github.com/charmbracelet/glow) markdown renderer
 - **Task list support** with styled checkboxes
 - **Custom heading styles**: Yellow H1 on blue background, blue H2-H5, green H6
 - **Code blocks**: Pink text on dark gray with syntax highlighting

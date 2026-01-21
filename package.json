@@ -2,7 +2,7 @@
   "name": "glow-vscode",
   "displayName": "Glow Markdown Preview",
   "description": "Glow/Glamour-inspired terminal aesthetics for VS Code markdown preview",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "publisher": "MrDHat",
   "license": "MIT",
   "repository": {
@@ -19,7 +19,7 @@
   "main": "./dist/extension.js",
   "contributes": {
     "markdown.previewStyles": [
-      "./styles/glow-dark.css"
+      "./styles/glow.css"
     ],
     "markdown.markdownItPlugins": true
   },

@@ -358,3 +358,174 @@ body kbd,
 ::-webkit-scrollbar-thumb:hover {
     background-color: #555 !important;
 }
+
+/* ========================================
+   LIGHT MODE OVERRIDES
+   ======================================== */
+
+.vscode-light {
+    background-color: #f5f5f5 !important;
+    color: #1a1a1a !important;
+}
+
+/* H1 keeps the signature yellow on purple */
+
+/* H2-H5 - Darker blue for light backgrounds */
+.vscode-light h2,
+.vscode-light h3,
+.vscode-light h4,
+.vscode-light h5 {
+    color: #0066cc !important;
+}
+
+.vscode-light h2::before,
+.vscode-light h3::before,
+.vscode-light h4::before,
+.vscode-light h5::before {
+    color: #0066cc !important;
+}
+
+/* H6 - Darker green */
+.vscode-light h6 {
+    color: #00875f !important;
+}
+
+.vscode-light h6::before {
+    color: #00875f !important;
+}
+
+/* Code blocks - Light background */
+.vscode-light pre {
+    background-color: #e8e8e8 !important;
+}
+
+.vscode-light pre code {
+    color: #1a1a1a !important;
+}
+
+/* Inline code - Pink on light gray */
+.vscode-light code {
+    color: #d63384 !important;
+    background-color: #e8e8e8 !important;
+}
+
+/* Syntax highlighting for light mode */
+.vscode-light .hljs-keyword,
+.vscode-light .hljs-selector-tag,
+.vscode-light .hljs-built_in,
+.vscode-light .hljs-name,
+.vscode-light .hljs-tag,
+.vscode-light .token.keyword,
+.vscode-light .token.builtin {
+    color: #0066cc !important;
+}
+
+.vscode-light .hljs-function,
+.vscode-light .hljs-title,
+.vscode-light .hljs-class .hljs-title,
+.vscode-light .token.function {
+    color: #019f57 !important;
+}
+
+.vscode-light .hljs-string,
+.vscode-light .hljs-attribute,
+.vscode-light .hljs-literal,
+.vscode-light .token.string {
+    color: #7e5b38 !important;
+}
+
+.vscode-light .hljs-number,
+.vscode-light .hljs-symbol,
+.vscode-light .token.number {
+    color: #0d8a6f !important;
+}
+
+.vscode-light .hljs-comment,
+.vscode-light .hljs-deletion,
+.vscode-light .hljs-meta,
+.vscode-light .token.comment {
+    color: #8d8d8d !important;
+}
+
+.vscode-light .hljs-variable,
+.vscode-light .hljs-params,
+.vscode-light .token.variable {
+    color: #1a1a1a !important;
+}
+
+/* Links - Darker teal */
+.vscode-light a {
+    color: #006666 !important;
+}
+
+.vscode-light a:hover {
+    color: #008888 !important;
+}
+
+/* Blockquotes */
+.vscode-light blockquote {
+    border-left-color: #999 !important;
+    color: #555 !important;
+}
+
+/* Lists */
+.vscode-light ul li::before {
+    color: #1a1a1a !important;
+}
+
+/* Task lists */
+.vscode-light input[type="checkbox"]::before {
+    color: #1a1a1a !important;
+}
+
+.vscode-light input[type="checkbox"]:checked::before {
+    color: #00875f !important;
+}
+
+/* Tables */
+.vscode-light th {
+    border-bottom-color: #ccc !important;
+    color: #1a1a1a !important;
+}
+
+.vscode-light td {
+    border-bottom-color: #ddd !important;
+}
+
+.vscode-light tbody tr:hover {
+    background-color: #e8e8e8 !important;
+}
+
+/* Horizontal rules */
+.vscode-light hr {
+    background-color: #ccc !important;
+}
+
+/* Strong and emphasis */
+.vscode-light strong {
+    color: #000000 !important;
+}
+
+.vscode-light em {
+    color: #1a1a1a !important;
+}
+
+/* Keyboard keys */
+.vscode-light kbd {
+    background-color: #e8e8e8 !important;
+    border-color: #ccc !important;
+    color: #1a1a1a !important;
+}
+
+/* Scrollbar */
+.vscode-light::-webkit-scrollbar-track {
+    background-color: #f5f5f5 !important;
+}
+
+.vscode-light::-webkit-scrollbar-thumb {
+    background-color: #ccc !important;
+}
+
+.vscode-light::-webkit-scrollbar-thumb:hover {
+    background-color: #bbb !important;
+}
