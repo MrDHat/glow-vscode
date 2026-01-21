@@ -35,18 +35,31 @@ A VS Code extension that enhances the built-in markdown preview with Glow/Glamou
 2. Open the markdown preview with `Ctrl+Shift+V` (or `Cmd+Shift+V` on Mac)
 3. The preview will automatically use the Glow dark theme
 
+## Recommended Font
+
+For the best experience matching the terminal aesthetic, install **JetBrains Mono** (the same font used by [Ghostty](https://ghostty.org) and other modern terminals):
+
+```bash
+# macOS (Homebrew)
+brew install --cask font-jetbrains-mono
+
+# Or download from https://www.jetbrains.com/lp/mono/
+```
+
+After installing, restart VS Code for the font to take effect.
+
 ## Color Palette
 
 | Element | Color |
 |---------|-------|
-| H1 text | Yellow (#FFD75F) |
-| H1 background | Blue (#5F5FD7) |
-| H2-H5 | Blue (#00AFFF) |
-| H6 | Green (#00D787) |
-| Code text | Pink (#FF5F87) |
-| Code background | Dark gray (#373737) |
-| Links | Cyan (#008787) |
-| Blockquote border | Purple (#AF87FF) |
+| H1 text | Yellow (#ffff87) |
+| H1 background | Purple (#5f5fff) |
+| H2-H5 | Cyan (#5fafff) |
+| H6 | Green (#00d787) |
+| Inline code | Pink (#ff5f87) |
+| Code background | Dark gray (#303030) |
+| Links | Teal (#008787) |
+| Blockquote border | Gray (#666) |
 
 ## Development
 
