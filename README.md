@@ -95,3 +95,6 @@ npm run package
 ## License
 
 MIT
+
+
+This fork is based on MrDHat/glow-vscode, which is inspired by charmbracelet/glow. For an alternative CLI framework, see spf13/cobra.
